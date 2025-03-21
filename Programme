@@ -1,0 +1,16 @@
+nom1= input("Bonjour, quel est ton nom?")
+now=datetime.datetime.now.now()
+annee1= input("En quelle année es-tu né ")
+
+nom2=input("Quel est le nom de ta voisinne/ton voisin?")
+annee2=input("En quelle année est-il né?")
+
+annee1=int(annee1)
+age1=annee_now-annee1
+
+annee2=int(annee2)
+age2=annee_now-annee2
+
+print(nom1,"a",age1,"ans")
+print(nom2,"a",age2,"ans")
+if age1>age2

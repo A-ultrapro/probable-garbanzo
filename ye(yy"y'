@@ -1,0 +1,45 @@
+menu()
+print("Bienvenue dans ce programme de calcul d'aire")
+print(" Pour un triangle, tapez 1")
+print(" Pour un carré, tapez 2")
+print(" Pour un rectangle, tapez 3")
+print("Pour un cercle, tapez 4")
+print("Pour quitter, tapez 5")
+choix = input ("Choississez une forme entre 1 et 5 :")
+
+choix=input("Quel est votre choix ?")
+choix=int(choix)
+
+if choix==1:
+    triangle()
+elif choix==2:
+    carre()
+elif choix==3:
+    rectangle()
+elif choix==4: 
+    cercle()
+elif choix==5:
+    quit()
+else:
+    print("Une erreur a été recontrée oups")
+
+def triangle (): 
+    base = input("Que vaut la base?")
+    base = float(base)
+    hauteur = input ("Que vaut la hauteur ?")
+    hauteur = float(hauteur)
+aire=base*hauteur/2
+print("L'aire du triangle est de :", round(aire,3))                                                                  
+   
+
+def cercle ():
+    rayon = input("Que vaut le rayon?")
+    rayon = float(rayon)
+    aire=pi*rayon**2
+  print("L'aire du cercle vaut :",round (aire,3))
+
+def quit():
+    print("Au revoir")
+
+if __name__ =="__main__":
+    main()
